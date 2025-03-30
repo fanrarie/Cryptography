@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RSA</class>
+ <widget class="QWidget" name="RSA">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>445</width>
+    <height>349</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0" rowspan="2">
+    <widget class="QLabel" name="label">
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font-family:&quot;Microsoft YaHei&quot;;
+font-size:30px;
+font-weight:bold;
+color:white;
+border:none;
+font-style:italic;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>RSA</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QRadioButton" name="radioButton">
+     <property name="styleSheet">
+      <string notr="true">QRadioButton{
+background-color:#473C8B;color:white;
+font-size:20px;
+boder:1px solid gray;
+padding:3px;
+}</string>
+     </property>
+     <property name="text">
+      <string>随机</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" rowspan="2">
+    <widget class="QRadioButton" name="radioButton_2">
+     <property name="styleSheet">
+      <string notr="true">QRadioButton{
+background-color:#473C8B;color:white;
+font-size:20px;
+boder:1px solid gray;
+padding:3px;
+}</string>
+     </property>
+     <property name="text">
+      <string>非随机</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font-family:&quot;Microsoft YaHei&quot;;
+font-size:24px;
+font-weight:bold;
+color:white;
+border:none;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>明文：</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" rowspan="3">
+    <widget class="QTextEdit" name="textEdit"/>
+   </item>
+   <item row="3" column="1">
+    <widget class="QPushButton" name="RSAjia">
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+background-color:#473C8B;
+border-style:outset;
+border-width:2px;
+border-radius:5px;
+border-color:#8B7355;
+font:bold 14px;
+min-width:2em;
+color:white;
+font-family:华文新魏;
+padding:5px;
+font-size:20px
+}
+QPushButton:Pressed
+{
+background-color:rgba(100,255,100,200);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+}
+QPushButton:hover
+{
+background-color:rgba(100,255,100,100);
+border-color:rgba(255,255,255,200);
+color:rgba(0,0,0,200);
+}</string>
+     </property>
+     <property name="text">
+      <string>RSA加密</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QPushButton" name="RSAjie">
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+background-color:#473C8B;
+border-style:outset;
+border-width:2px;
+border-radius:5px;
+border-color:#8B7355;
+font:bold 14px;
+min-width:2em;
+color:white;
+font-family:华文新魏;
+padding:5px;
+font-size:20px
+}
+QPushButton:Pressed
+{
+background-color:rgba(100,255,100,200);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+}
+QPushButton:hover
+{
+background-color:rgba(100,255,100,100);
+border-color:rgba(255,255,255,200);
+color:rgba(0,0,0,200);
+}</string>
+     </property>
+     <property name="text">
+      <string>RSA解密</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QLabel" name="label_5">
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font-family:&quot;Microsoft YaHei&quot;;
+font-size:24px;
+font-weight:bold;
+color:white;
+border:none;
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>密文：</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1" rowspan="2" colspan="2">
+    <widget class="QTextBrowser" name="textBrowser"/>
+   </item>
+   <item row="6" column="0">
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+font-family:&quot;Microsoft YaHei&quot;;
+font-size:24px;
+font-weight:bold;
+color:white;
+border:none;
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>公钥e：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    border: 1px solid rgb(41, 57, 85);   
+    border-radius: 3px;  
+    background: white;  
+    selection-background-color: green; 
+    font-size: 14px ; 
+}
+ 
+QLineEdit:hover 
+{
+    border: 1px solid blue;  
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+font-family:&quot;Microsoft YaHei&quot;;
+font-size:24px;
+font-weight:bold;
+color:white;
+border:none;
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>公钥n：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit2">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    border: 1px solid rgb(41, 57, 85);   
+    border-radius: 3px;  
+    background: white;  
+    selection-background-color: green; 
+    font-size: 14px ; 
+}
+ 
+QLineEdit:hover 
+{
+    border: 1px solid blue;  
+}
+</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QWidget" name="widget_5" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_5"/>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="QPushButton" name="back">
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+background-color:#473C8B;
+border-style:outset;
+border-width:2px;
+border-radius:5px;
+border-color:#8B7355;
+font:bold 14px;
+min-width:2em;
+color:white;
+font-family:华文新魏;
+padding:5px;
+font-size:20px
+}
+QPushButton:Pressed
+{
+background-color:rgba(100,255,100,200);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+}
+QPushButton:hover
+{
+background-color:rgba(100,255,100,100);
+border-color:rgba(255,255,255,200);
+color:rgba(0,0,0,200);
+}</string>
+     </property>
+     <property name="text">
+      <string>返回</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AES</class>
+ <widget class="QWidget" name="AES">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>588</width>
+    <height>416</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0" colspan="2">
+    <widget class="QGroupBox" name="groupBox_settings">
+     <property name="title">
+      <string>Settings</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0" colspan="2">
+       <widget class="QLabel" name="label_keyLen">
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+font-family:&quot;Microsoft YaHei&quot;;
+font-size:20px;
+font-weight:bold;
+color:black;
+border:none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Key length</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QComboBox" name="comboBox_keyLen">
+        <property name="cursor">
+         <cursorShape>OpenHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox
+{
+color:#666666;
+font-size:14px;
+padding:1px 15px 1px 3px;
+border:1px solid rgba(228,228,228,1);
+border-radius:5px 5px 0px 0px;
+}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>16</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>24</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>32</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="label_blockLen">
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+font-family:&quot;Microsoft YaHei&quot;;
+font-size:20px;
+font-weight:bold;
+color:black;
+border:none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Block length</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QComboBox" name="comboBox_blockLen">
+        <property name="cursor">
+         <cursorShape>OpenHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox
+{
+color:#666666;
+font-size:14px;
+padding:1px 15px 1px 3px;
+border:1px solid rgba(228,228,228,1);
+border-radius:5px 5px 0px 0px;
+}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>16</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>24</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>32</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QLabel" name="label_mode">
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+font-family:&quot;Microsoft YaHei&quot;;
+font-size:20px;
+font-weight:bold;
+color:black;
+border:none;
+}</string>
+        </property>
+        <property name="text">
+         <string>AES Mode</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QComboBox" name="comboBox_mode">
+        <property name="cursor">
+         <cursorShape>OpenHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox
+{
+color:#666666;
+font-size:14px;
+padding:1px 15px 1px 3px;
+border:1px solid rgba(228,228,228,1);
+border-radius:5px 5px 0px 0px;
+}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>ECB</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CBC</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CFB</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QRadioButton" name="rBtn_compare">
+        <property name="styleSheet">
+         <string notr="true">QRadioButton{
+
+font-family: &quot;Microsoft YaHei&quot;;
+
+font-size: 25px;
+
+color: #bdc8e2;
+
+outline:0px;
+
+border-style: solid;
+
+border-width: 1px;
+
+
+border：3px solid red
+min-width:20px;
+
+min-height:20px;
+
+background-color:rgba(288,288,288,1);
+
+}</string>
+        </property>
+        <property name="text">
+         <string>compare files</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_key">
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+font-family:&quot;Microsoft YaHei&quot;;
+font-size:20px;
+font-weight:bold;
+color:black;
+border:none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Key</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" colspan="4">
+       <widget class="QLineEdit" name="lineEdit_key">
+        <property name="focusPolicy">
+         <enum>Qt::StrongFocus</enum>
+        </property>
+        <property name="placeholderText">
+         <string>Enter a key of the selected length...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="2" colspan="2">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>AES</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="Btn_encrypt">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+background-color:#473C8B;
+border-style:outset;
+border-width:2px;
+border-radius:5px;
+border-color:#8B7355;
+font:bold 14px;
+min-width:2em;
+color:white;
+font-family:华文新魏;
+padding:5px;
+font-size:20px
+}
+QPushButton:Pressed
+{
+background-color:rgba(100,255,100,200);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+}
+QPushButton:hover
+{
+background-color:rgba(100,255,100,100);
+border-color:rgba(255,255,255,200);
+color:rgba(0,0,0,200);
+}</string>
+        </property>
+        <property name="text">
+         <string>Encrypt</string>
+        </property>
+        <property name="shortcut">
+         <string>Ctrl+E</string>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="default">
+         <bool>true</bool>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Btn_decrypt">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+background-color:#473C8B;
+border-style:outset;
+border-width:2px;
+border-radius:5px;
+border-color:#8B7355;
+font:bold 14px;
+min-width:2em;
+color:white;
+font-family:华文新魏;
+padding:5px;
+font-size:20px
+}
+QPushButton:Pressed
+{
+background-color:rgba(100,255,100,200);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+}
+QPushButton:hover
+{
+background-color:rgba(100,255,100,100);
+border-color:rgba(255,255,255,200);
+color:rgba(0,0,0,200);
+}</string>
+        </property>
+        <property name="text">
+         <string>Decrypt</string>
+        </property>
+        <property name="shortcut">
+         <string>Ctrl+D</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_input">
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font-family:&quot;Microsoft YaHei&quot;;
+font-size:20px;
+font-weight:bold;
+color:black;
+border:none;
+}</string>
+     </property>
+     <property name="text">
+      <string>Input:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_input">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QPushButton" name="Btn_file">
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+background-color:#473C8B;
+border-style:outset;
+border-width:2px;
+border-radius:5px;
+border-color:#8B7355;
+font:bold 14px;
+min-width:2em;
+color:white;
+font-family:华文新魏;
+padding:5px;
+font-size:20px
+}
+QPushButton:Pressed
+{
+background-color:rgba(100,255,100,200);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+}
+QPushButton:hover
+{
+background-color:rgba(100,255,100,100);
+border-color:rgba(255,255,255,200);
+color:rgba(0,0,0,200);
+}</string>
+     </property>
+     <property name="text">
+      <string>Import file</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label">
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font-family:&quot;Microsoft YaHei&quot;;
+font-size:20px;
+font-weight:bold;
+color:black;
+border:none;
+}</string>
+     </property>
+     <property name="text">
+      <string>Output:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_output">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QPushButton" name="Btn_save">
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+background-color:#473C8B;
+border-style:outset;
+border-width:2px;
+border-radius:5px;
+border-color:#8B7355;
+font:bold 14px;
+min-width:2em;
+color:white;
+font-family:华文新魏;
+padding:5px;
+font-size:20px
+}
+QPushButton:Pressed
+{
+background-color:rgba(100,255,100,200);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+}
+QPushButton:hover
+{
+background-color:rgba(100,255,100,100);
+border-color:rgba(255,255,255,200);
+color:rgba(0,0,0,200);
+}</string>
+     </property>
+     <property name="text">
+      <string>Save path</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="4">
+    <widget class="QGroupBox" name="groupBox_compare">
+     <property name="title">
+      <string>Compare Files</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_file1">
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+font-family:&quot;Microsoft YaHei&quot;;
+font-size:20px;
+font-weight:bold;
+color:black;
+border:none;
+}</string>
+        </property>
+        <property name="text">
+         <string>file1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="3">
+       <widget class="QLineEdit" name="lineEdit_file1">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QPushButton" name="Btn_file1">
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+background-color:#473C8B;
+border-style:outset;
+border-width:2px;
+border-radius:5px;
+border-color:#8B7355;
+font:bold 14px;
+min-width:2em;
+color:white;
+font-family:华文新魏;
+padding:5px;
+font-size:20px
+}
+QPushButton:Pressed
+{
+background-color:rgba(100,255,100,200);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+}
+QPushButton:hover
+{
+background-color:rgba(100,255,100,100);
+border-color:rgba(255,255,255,200);
+color:rgba(0,0,0,200);
+}</string>
+        </property>
+        <property name="text">
+         <string>Import file1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_file2">
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+font-family:&quot;Microsoft YaHei&quot;;
+font-size:20px;
+font-weight:bold;
+color:black;
+border:none;
+}</string>
+        </property>
+        <property name="text">
+         <string>file2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="3">
+       <widget class="QLineEdit" name="lineEdit_file2">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QPushButton" name="Btn_file2">
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+background-color:#473C8B;
+border-style:outset;
+border-width:2px;
+border-radius:5px;
+border-color:#8B7355;
+font:bold 14px;
+min-width:2em;
+color:white;
+font-family:华文新魏;
+padding:5px;
+font-size:20px
+}
+QPushButton:Pressed
+{
+background-color:rgba(100,255,100,200);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+}
+QPushButton:hover
+{
+background-color:rgba(100,255,100,100);
+border-color:rgba(255,255,255,200);
+color:rgba(0,0,0,200);
+}</string>
+        </property>
+        <property name="text">
+         <string>Import file2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="label_change">
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+font-family:&quot;Microsoft YaHei&quot;;
+font-size:20px;
+font-weight:bold;
+color:black;
+border:none;
+}</string>
+        </property>
+        <property name="text">
+         <string>change chars:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="label_percentage">
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+font-family:&quot;Microsoft YaHei&quot;;
+font-size:20px;
+font-weight:bold;
+color:black;
+border:none;
+}</string>
+        </property>
+        <property name="text">
+         <string>0%</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3" colspan="2">
+       <widget class="QPushButton" name="Btn_compare">
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+background-color:#473C8B;
+border-style:outset;
+border-width:2px;
+border-radius:5px;
+border-color:#8B7355;
+font:bold 14px;
+min-width:2em;
+color:white;
+font-family:华文新魏;
+padding:5px;
+font-size:20px
+}
+QPushButton:Pressed
+{
+background-color:rgba(100,255,100,200);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+}
+QPushButton:hover
+{
+background-color:rgba(100,255,100,100);
+border-color:rgba(255,255,255,200);
+color:rgba(0,0,0,200);
+}</string>
+        </property>
+        <property name="text">
+         <string>Compare</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

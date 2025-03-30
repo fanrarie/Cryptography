@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>473</width>
+    <height>398</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/new/prefix1/image/R-C.jpg);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="1">
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="des">
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+background-color:rgba(100,225,100,30);
+border-style:outset;
+border-width:4px;
+border-radius:10px;
+border-color:rgba(255,255,255,30);
+font:bold 10px;
+color:#9999FF;
+padding:6px;
+font-size:40px
+}
+QPushButton:Pressed
+{
+background-color:rgba(100,255,100,200);
+border-color:#7744FF;
+border-style:inset;
+color:#7744FF;
+}
+QPushButton:hover
+{
+background-color:rgba(100,255,100,100);
+border-color:#7744FF;
+color:white;
+}</string>
+         </property>
+         <property name="text">
+          <string>DES</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+background-color:rgba(100,225,100,30);
+border-style:outset;
+border-width:4px;
+border-radius:10px;
+border-color:rgba(255,255,255,30);
+font:bold 10px;
+color:#9999FF;
+padding:6px;
+font-size:40px
+}
+QPushButton:Pressed
+{
+background-color:rgba(100,255,100,200);
+border-color:#7744FF;
+border-style:inset;
+color:#7744FF;
+}
+QPushButton:hover
+{
+background-color:rgba(100,255,100,100);
+border-color:#7744FF;
+color:white;
+}</string>
+         </property>
+         <property name="text">
+          <string>AES</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+background-color:rgba(100,225,100,30);
+border-style:outset;
+border-width:4px;
+border-radius:10px;
+border-color:rgba(255,255,255,30);
+font:bold 10px;
+color:#9999FF;
+padding:6px;
+font-size:40px
+}
+QPushButton:Pressed
+{
+background-color:rgba(100,255,100,200);
+border-color:#7744FF;
+border-style:inset;
+color:#7744FF;
+}
+QPushButton:hover
+{
+background-color:rgba(100,255,100,100);
+border-color:#7744FF;
+color:white;
+}</string>
+         </property>
+         <property name="text">
+          <string>RSA</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+background-color:rgba(100,225,100,30);
+border-style:outset;
+border-width:4px;
+border-radius:10px;
+border-color:rgba(255,255,255,30);
+font:bold 10px;
+color:#9999FF;
+padding:6px;
+font-size:30px
+}
+QPushButton:Pressed
+{
+background-color:rgba(100,255,100,200);
+border-color:#7744FF;
+border-style:inset;
+color:#7744FF;
+}
+QPushButton:hover
+{
+background-color:rgba(100,255,100,100);
+border-color:#7744FF;
+color:white;
+}</string>
+         </property>
+         <property name="text">
+          <string>Diffie-Hellman密钥交换</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+background-color:rgba(100,225,100,30);
+border-style:outset;
+border-width:4px;
+border-radius:10px;
+border-color:rgba(255,255,255,30);
+font:bold 10px;
+color:#9999FF;
+padding:6px;
+font-size:40px
+}
+QPushButton:Pressed
+{
+background-color:rgba(100,255,100,200);
+border-color:#7744FF;
+border-style:inset;
+color:#7744FF;
+}
+QPushButton:hover
+{
+background-color:rgba(100,255,100,100);
+border-color:#7744FF;
+color:white;
+}</string>
+         </property>
+         <property name="text">
+          <string>ElGamal签名算法</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">font-family: &quot;Microsoft YaHei&quot;;
+
+font-style: italic;
+font-weight: bold;
+color: white;
+font: bold italic 18px &quot;Microsoft YaHei&quot;;
+font-size:50px
+
+
+</string>
+      </property>
+      <property name="text">
+       <string>Cipher</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

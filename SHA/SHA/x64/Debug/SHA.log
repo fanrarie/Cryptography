@@ -1,0 +1,9 @@
+﻿  SHA.cpp
+E:\Qt\EXE(1)\EXE\SHA\SHA\SHA.cpp(148,17): warning C4244: “=”: 从“__int64”转换到“uint32_t”，可能丢失数据
+E:\Qt\EXE(1)\EXE\SHA\SHA\SHA.cpp(201,17): warning C4244: “=”: 从“__int64”转换到“uint32_t”，可能丢失数据
+E:\Qt\EXE(1)\EXE\SHA\SHA\SHA.cpp(202,23): warning C4244: “=”: 从“__int64”转换到“uint32_t”，可能丢失数据
+E:\Qt\EXE(1)\EXE\SHA\SHA\SHA.cpp(241,30): warning C4244: “=”: 从“std::streamsize”转换到“int”，可能丢失数据
+E:\Qt\EXE(1)\EXE\SHA\SHA\SHA.cpp(251,17): warning C4244: “=”: 从“__int64”转换到“uint32_t”，可能丢失数据
+E:\Qt\EXE(1)\EXE\SHA\SHA\SHA.cpp(252,23): warning C4244: “=”: 从“__int64”转换到“uint32_t”，可能丢失数据
+E:\Qt\EXE(1)\EXE\SHA\SHA\SHA.cpp(56,26): warning C4101: “finish”: 未引用的局部变量
+  SHA.vcxproj -> E:\Qt\EXE(1)\EXE\SHA\x64\Debug\SHA.exe

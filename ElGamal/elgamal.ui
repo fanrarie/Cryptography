@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ElGamal</class>
+ <widget class="QWidget" name="ElGamal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>565</width>
+    <height>521</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="0" colspan="2">
+       <widget class="QLineEdit" name="lineEdit"/>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="QLineEdit" name="lineEdit_2"/>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+font-family:&quot;Microsoft YaHei&quot;;
+font-size:30px;
+font-weight:bold;
+color:black;
+border:none;
+font-style:italic;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>ElGamal签名算法</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+background-color:#473C8B;
+border-style:outset;
+border-width:2px;
+border-radius:5px;
+border-color:#8B7355;
+font:bold 14px;
+min-width:2em;
+color:white;
+font-family:华文新魏;
+padding:5px;
+font-size:20px
+}
+QPushButton:Pressed
+{
+background-color:rgba(100,255,100,200);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+}
+QPushButton:hover
+{
+background-color:rgba(100,255,100,100);
+border-color:rgba(255,255,255,200);
+color:rgba(0,0,0,200);
+}</string>
+        </property>
+        <property name="text">
+         <string>Save file</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="pushButton">
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+background-color:#473C8B;
+border-style:outset;
+border-width:2px;
+border-radius:5px;
+border-color:#8B7355;
+font:bold 14px;
+min-width:2em;
+color:white;
+font-family:华文新魏;
+padding:5px;
+font-size:20px
+}
+QPushButton:Pressed
+{
+background-color:rgba(100,255,100,200);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+}
+QPushButton:hover
+{
+background-color:rgba(100,255,100,100);
+border-color:rgba(255,255,255,200);
+color:rgba(0,0,0,200);
+}</string>
+        </property>
+        <property name="text">
+         <string>Input file</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" rowspan="2">
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+font-family:&quot;Microsoft YaHei&quot;;
+font-size:24px;
+font-weight:bold;
+color:white;
+border:none;
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>公钥y：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1" colspan="2">
+       <widget class="QLineEdit" name="lineEdit_3"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QWidget" name="widget_2" native="true">
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>391</width>
+        <height>251</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>30</y>
+        <width>141</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background-color:#473C8B;
+border-style:outset;
+border-width:2px;
+border-radius:5px;
+border-color:#8B7355;
+font:bold 14px;
+min-width:2em;
+color:white;
+font-family:华文新魏;
+padding:5px;
+font-size:30px
+}
+QPushButton:Pressed
+{
+background-color:rgba(100,255,100,200);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+}
+QPushButton:hover
+{
+background-color:rgba(100,255,100,100);
+border-color:rgba(255,255,255,200);
+color:rgba(0,0,0,200);
+}</string>
+      </property>
+      <property name="text">
+       <string>数字签名</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>160</y>
+        <width>141</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background-color:#473C8B;
+border-style:outset;
+border-width:2px;
+border-radius:5px;
+border-color:#8B7355;
+font:bold 14px;
+min-width:2em;
+color:white;
+font-family:华文新魏;
+padding:5px;
+font-size:30px
+}
+QPushButton:Pressed
+{
+background-color:rgba(100,255,100,200);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+}
+QPushButton:hover
+{
+background-color:rgba(100,255,100,100);
+border-color:rgba(255,255,255,200);
+color:rgba(0,0,0,200);
+}</string>
+      </property>
+      <property name="text">
+       <string>签名验证</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
